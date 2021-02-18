@@ -111,7 +111,8 @@ function generatePass(){
     }
     //for loop to select random array values
     for( var i = 0; i < choices.length; i++ ){
-        result.push(possChar);
+        var possible = getRandom(possChar)
+        result.push(possible);
     }
 
     for(var i = 0; i < guarChar.length; i++){
